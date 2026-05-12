@@ -1,0 +1,46 @@
+============================================================
+REPORTE DE OPTIMIZACIÓN DE HIPERPARÁMETROS
+============================================================
+
+1. RESUMEN DE BÚSQUEDAS:
+----------------------------------------
+
+Modelo: Random Forest
+  Método: GridSearchCV
+  Mejores parámetros: {'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 50}
+  CV Score (F1): 0.9950
+  Test Score (F1): 0.9950
+
+Modelo: Logistic Regression
+  Método: GridSearchCV
+  Mejores parámetros: {'C': 10, 'penalty': 'l1', 'solver': 'liblinear'}
+  CV Score (F1): 0.9994
+  Test Score (F1): 1.0000
+
+Modelo: Gradient Boosting
+  Método: RandomizedSearchCV
+  Mejores parámetros: {'subsample': 0.8, 'n_estimators': 100, 'min_samples_split': 2, 'max_depth': 7, 'learning_rate': 0.1}
+  CV Score (F1): 0.9962
+  Test Score (F1): 1.0000
+
+Modelo: Decision Tree
+  Método: RandomizedSearchCV
+  Mejores parámetros: {'min_samples_split': 5, 'min_samples_leaf': 4, 'max_depth': 5, 'criterion': 'entropy'}
+  CV Score (F1): 1.0000
+  Test Score (F1): 1.0000
+
+
+2. RANKING FINAL:
+----------------------------------------
+1. Logistic Regression: F1=1.0000, Acc=1.0000
+2. Gradient Boosting: F1=1.0000, Acc=1.0000
+3. Decision Tree: F1=1.0000, Acc=1.0000
+4. Random Forest: F1=0.9950, Acc=0.9900
+
+
+3. CONCLUSIONES:
+----------------------------------------
+- GridSearchCV proporciona búsqueda exhaustiva
+- RandomizedSearchCV es más eficiente para espacios grandes
+- Todos los modelos optimizados están en models/trained_models/
+- Los mejores parámetros se guardaron en archivos JSON

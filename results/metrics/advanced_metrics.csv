@@ -1,0 +1,8 @@
+,Accuracy,Precision,Recall,F1-Score,Matthews_Correlation,Cohen_Kappa
+Decision Tree,1.0,1.0,1.0,1.0,1.0,1.0
+Gradient Boosting,0.99,0.99,1.0,0.995,0.0,0.0
+Knn,0.99,0.99,1.0,0.995,0.0,0.0
+Logistic Regression,0.99,1.0,0.9899,0.9949,0.7035,0.6622
+Naive Bayes,0.995,0.995,1.0,0.9975,0.7053,0.6644
+Random Forest,0.99,0.99,1.0,0.995,0.0,0.0
+Svm,0.99,0.99,1.0,0.995,0.0,0.0

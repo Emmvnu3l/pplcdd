@@ -1,0 +1,5 @@
+Modelo,Search_Method,CV_Score,Test_Score,Best_Params
+Decision Tree,RandomizedSearchCV,1.0,1.0,"{'min_samples_split': 5, 'min_samples_leaf': 4, 'max_depth': 5, 'criterion': 'entropy'}"
+Logistic Regression,GridSearchCV,0.9993698802772526,1.0,"{'C': 10, 'penalty': 'l1', 'solver': 'liblinear'}"
+Gradient Boosting,RandomizedSearchCV,0.9962216594737905,1.0,"{'subsample': 0.8, 'n_estimators': 100, 'min_samples_split': 2, 'max_depth': 7, 'learning_rate': 0.1}"
+Random Forest,GridSearchCV,0.9949756600220304,0.9949748743718593,"{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 50}"

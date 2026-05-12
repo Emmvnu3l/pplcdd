@@ -1,0 +1,40 @@
+======================================================================
+REPORTE FINAL - PROYECTO DE ANALISIS DE CANCER DE PIEL
+======================================================================
+
+1. RESUMEN EJECUTIVO
+--------------------------------------------------
+Este proyecto implementa un pipeline completo de Machine Learning
+para el analisis y clasificacion de lesiones de piel en Chile.
+
+2. ESTRUCTURA DEL PROYECTO
+--------------------------------------------------
+- notebooks/: 5 notebooks Jupyter organizados por etapa
+- src/: Modulos Python reutilizables
+- data/: Datos raw y processed
+- models/: Modelos entrenados serializados
+- results/: Metricas, plots y reportes
+
+3. PIPELINE IMPLEMENTADO
+--------------------------------------------------
+01_exploratory_analysis.ipynb - Analisis EDA y feature engineering
+02_supervised_modeling.ipynb - Entrenamiento de 7 modelos
+03_model_evaluation.ipynb - Evaluacion comparativa detallada
+04_hyperparameter_optimization.ipynb - GridSearchCV y RandomizedSearchCV
+05_final_analysis.ipynb - Integracion y conclusiones
+
+4. RESULTADOS PRINCIPALES
+--------------------------------------------------
+Mejor modelo: Decision Tree Optimized
+F1-Score: 1.0000
+
+5. CONCLUSIONES
+--------------------------------------------------
+- Dataset con desbalance extremo (99% clase mayoritaria)
+- Multiples modelos entrenados y optimizados
+- Pipeline completo documentado y reproducible
+- Recomendaciones para trabajo futuro identificadas
+
+======================================================================
+Fin del Reporte
+======================================================================
